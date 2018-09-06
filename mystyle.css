@@ -9,6 +9,14 @@ body{
   height: 100%;
 }
 
+.phone{
+  display:none;
+}
+
+.desk{
+  display:block;
+}
+
 .nav{
   position: absolute;
 }
@@ -26,6 +34,7 @@ body{
 
 #name:hover{
   text-decoration: none;
+  color:black;
 }
 
 button{
@@ -39,7 +48,7 @@ button{
 }
 
 button:hover{
-  text-decoration: underline;
+  color:#FF5400;
 }
 
 ul{

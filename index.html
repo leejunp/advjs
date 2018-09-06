@@ -3,27 +3,40 @@
   <head>
     <title>Advanced JS</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <div class="nav">
-    <button id="name" onclick="intro()">LeeJun Park.</button>
+    <button  class="desk" id="name" onclick="intro()">LeeJun Park.</button>
+    <button  class="phone" id="name" onclick="intro()">LJ.</button>
 
       <div id="list">
         <ul>
-          <li><button id="button1" onclick="as1()">Assignment 1</button></li>
-          <li><button id="button2" onclick="as2()">Assignment 2</button></li>
+          <div class="desk">
+            <li><button id="button1" onclick="as1()">Assignment 1</button></li>
+            <li><button id="button2" onclick="as2()">Assignment 2</button></li>
 
-          <div id="hasdrop1">
-            <li><button id="button3" onclick="as3()">Assignment 3</button></li>
-              <div id="drpdown1">
-                <li><button id="button3.1" onclick="as31()">Process</button></li>
-                <li><button id="button3.2" onclick="as32()">Final Product</button></li>
+            <div id="hasdrop1">
+              <li><button id="button3" onclick="as3()">Assignment 3</button></li>
+                <div id="drpdown1">
+                  <li><button id="button3.1" onclick="as31()">Process</button></li>
+                  <li><button id="button3.2" onclick="as32()">Final Product</button></li>
+                </div>
               </div>
-            </div>
 
-          <li><button id="button4" onclick="as4()">Assignment 4</button></li>
+            <li><button id="button4" onclick="as4()">Assignment 4</button></li>
+          </div>
+
+
+          <div class="phone">
+            <li><button id="button1" onclick="as1()">A1</button></li>
+            <li><button id="button2" onclick="as2()">A2</button></li>
+            <li><button id="button3" onclick="as3()">A3</button></li>
+            <li><button id="button4" onclick="as4()">A4</button></li>
+          </div>
         </ul>
       </div>
 
