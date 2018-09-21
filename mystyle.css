@@ -2,11 +2,13 @@ html {
     height: 100%;
 }
 
-body{
+body, a{
   font-family: 'Cutive Mono', monospace;
   background-color: #D9D9D9;
+  color:black;
   margin:0;
   height: 100%;
+  text-decoration: none;
 }
 
 .phone{
@@ -32,23 +34,9 @@ body{
   margin-top:4vw;
 }
 
-#name:hover{
+#name:hover, #name:active{
   text-decoration: none;
   color:black;
-}
-
-button{
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-
-button:hover{
-  color:#FF5400;
 }
 
 ul{
@@ -59,6 +47,14 @@ ul{
 
 li{
   margin-bottom: 0.7vw;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  text-decoration: underline;
 }
 
 .main{
@@ -85,3 +81,45 @@ li{
   display:none;
   margin-left:2vw;
 }
+
+/* PATTERNING */
+
+.pattern1{
+  position: absolute;
+  margin-top:-13200px;
+}
+
+.pattern2{
+  position: absolute;
+  margin-top:-13214px;
+}
+
+#re2{
+  margin-left: 7vw;
+}
+
+#re3{
+  margin-left: 14vw;
+}
+
+#re4{
+  margin-left: 21vw;
+}
+
+#re5{
+  margin-left: 28vw;
+}
+
+#re6{
+  margin-left: 35vw;
+}
+
+#re7{
+  margin-left: 42vw;
+}
+
+#re8{
+  margin-left: 49vw;
+}
+
+/* PATTERNING END */

@@ -1,58 +1,19 @@
-function intro(){
-  $('.main').hide();
-  $(':button').css("color","black")
-  $('#intro').show()
-}
+for(var x = 0; x < 400; x++){
 
-function as1(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as1').show()
-  $('#button1').css("color","#FF5400")
-}
+  var hex = '0123456789ABCDEF';
+  var color = '#';
 
-function as2(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as2').show()
-  $('#button2').css("color","#FF5400")
-}
-
-// WITH DROP DOWN
-function as3(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as3').show()
-  $('#button3').css("color","#FF5400")
-}
-
-$('#hasdrop1').hover(
-  function(){
-    $('#drpdown1').show()
-  },
-  function(){
-    $('#drpdown1').hide()
+  for (var z = 0; z < 6; z++) {
+    color += hex[Math.floor(Math.random() * 16)];
   }
-)
 
-function as31(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as31').show()
-  $('#button3').css("color","#FF5400")
-}
 
-function as32(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as32').show()
-  $('#button3').css("color","#FF5400")
-}
-//END OF DROP DROP DOWN
-
-function as4(){
-  $('.main').hide()
-  $(':button').css("color","black")
-  $('#as4').show()
-  $('#button4').css("color","#FF5400")
+  $('#re1').append('<p>I will change color!</p>').css('color', color);
+  $('#re2').append('<p>Will I change color?</p>').css('color', color);
+  $('#re3').append('<p>I will change color!</p>').css('color', color);
+  $('#re4').append('<p>Will I change color?</p>').css('color', color);
+  $('#re5').append('<p>I will change color!</p>').css('color', color);
+  $('#re6').append('<p>Will I change color?</p>').css('color', color);
+  $('#re7').append('<p>I will change color!</p>').css('color', color);
+  $('#re8').append('<p>Will I change color?</p>').css('color', color);
 }
