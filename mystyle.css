@@ -84,42 +84,86 @@ a:active{
 
 /* PATTERNING */
 
-.pattern1{
+.pattern{
   position: absolute;
-  margin-top:-13200px;
-}
-
-.pattern2{
-  position: absolute;
-  margin-top:-13214px;
 }
 
 #re2{
-  margin-left: 7vw;
+  margin-left: 4vw;
+  margin-top:-13200px;
 }
 
 #re3{
-  margin-left: 14vw;
+  margin-left: 8vw;
+  margin-top:-13186px;
 }
 
 #re4{
-  margin-left: 21vw;
+  margin-left: 12vw;
+  margin-top:-13172px;
 }
 
 #re5{
-  margin-left: 28vw;
+  margin-left: 16vw;
+  margin-top:-13158px;
 }
 
 #re6{
-  margin-left: 35vw;
+  margin-left: 20vw;
+  margin-top:-13144px;
 }
 
 #re7{
-  margin-left: 42vw;
+  margin-left: 24vw;
+  margin-top:-13130px;
 }
 
 #re8{
-  margin-left: 49vw;
+  margin-left: 28vw;
+  margin-top:-13116px;
+}
+
+#re9{
+  margin-left: 32vw;
+  margin-top:-13130px;
+}
+
+#re10{
+  margin-left: 36vw;
+  margin-top:-13144px;
+}
+
+#re11{
+  margin-left: 40vw;
+  margin-top:-13158px;
+}
+
+#re12{
+  margin-left: 44vw;
+  margin-top:-13172px;
+}
+
+#re13{
+  margin-left: 48vw;
+  margin-top:-13186px;
+}
+
+#re14{
+  margin-left: 52vw;
+  margin-top:-13200px;
+}
+
+#re15{
+  margin-left: 56vw;
+  margin-top:-13214px;
 }
 
 /* PATTERNING END */
+
+.cloud{
+  font-size: 150px;
+}
+
+.cloud, #wrapper{
+  text-align: center;
+}
