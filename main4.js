@@ -1,6 +1,9 @@
 var timer = 0;
 var l=0;
 var w = 0;
+var rad = 0;
+var count = 0;
+var up = 0;
 
 for(var x = 0; x < 1000; x++){
 
@@ -15,9 +18,10 @@ for(var x = 0; x < 1000; x++){
     for (var z = 0; z < 6; z++) {
       color += hex[Math.floor(Math.random() * 16)];
     }
+
     circle.style.backgroundColor = color;
 
-    document.getElementById("shapes").addEventListener("click", right());
+
     document.getElementById("shapes").onclick = function(){ right()};
     document.getElementById("shapes").onmouseover = function() {hov()};
 
