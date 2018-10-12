@@ -19,9 +19,11 @@ for(var x = 0; x < 1000; x++){
       l = Math.random()*60+1;
       w = Math.random()*30+1;
       o = Math.random()*1;
+      r = Math.random()*5;
       circle.style.marginLeft = l +"vw";
       circle.style.marginTop = w +"vw";
       circle.style.opacity = o;
+      circle.style.borderRadius = r + "vw";
     }
 
     for (var z = 0; z < 6; z++) {
