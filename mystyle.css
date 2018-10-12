@@ -190,3 +190,7 @@ a:active{
   background-color:black;
   border-radius:5vw;
 }
+
+.circle:hover{
+  cursor: pointer;
+}
