@@ -12,8 +12,20 @@ for(var x = 0; x < 1000; x++){
     var hex = '0123456789ABCDEF';
     var color = '#';
 
+    for (var z = 0; z < 6; z++) {
+      color += hex[Math.floor(Math.random() * 16)];
+    }
+    circle.style.backgroundColor = color;
+
     document.getElementById("shapes").addEventListener("click", right());
     document.getElementById("shapes").onclick = function(){ right()};
+    document.getElementById("shapes").onmouseover = function() {hov()};
+
+    function hov(){
+      a = Math.random()*30+1;
+      circle.style.width = a+"vw";
+      circle.style.height = a+"vw";
+    }
 
     function right(){
       l = Math.random()*60+1;
@@ -26,10 +38,6 @@ for(var x = 0; x < 1000; x++){
       circle.style.borderRadius = r + "vw";
     }
 
-    for (var z = 0; z < 6; z++) {
-      color += hex[Math.floor(Math.random() * 16)];
-    }
-    circle.style.backgroundColor = color;
 
     document.getElementById("shapes").appendChild(circle);
   }, timer)
