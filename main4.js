@@ -2,7 +2,7 @@ var timer = 0;
 var l=0;
 var w = 0;
 
-for(var x = 0; x < 500; x++){
+for(var x = 0; x < 1000; x++){
 
   setTimeout(function(){
 
@@ -12,11 +12,11 @@ for(var x = 0; x < 500; x++){
     var hex = '0123456789ABCDEF';
     var color = '#';
 
-    // document.getElementById("myButton").addEventListener("click", right());
-    document.getElementById("myButton").onclick = function(){ right()};
+    document.getElementById("shapes").addEventListener("click", right());
+    document.getElementById("shapes").onclick = function(){ right()};
 
     function right(){
-      l = Math.random()*30+1;
+      l = Math.random()*60+1;
       w = Math.random()*30+1;
       o = Math.random()*1;
       circle.style.marginLeft = l +"vw";
@@ -32,5 +32,5 @@ for(var x = 0; x < 500; x++){
     document.getElementById("shapes").appendChild(circle);
   }, timer)
 
-timer+=100;
+timer+=300;
 }
